@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Hero Section with Bootstrap Navbar</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bootstrap Header Section -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 0C77.6142 0 100 22.3858 100 50C100 77.6142 77.6142 100 50 100C22.3858 100 0 77.6142 0 50C0 36.8553 5.46051 25.0453 14.3949 16.6433C25.7279 5.88247 41.5362 0 50 0Z" fill="#F43F5E"/>
+                        <path d="M60.6066 39.3934C64.5118 43.2987 64.5118 49.6303 60.6066 53.5355C56.7013 57.4408 50.3697 57.4408 46.4645 53.5355L25 32.0711V75H32.0711L53.5355 53.5355C57.4408 49.6303 63.7725 49.6303 67.6777 53.5355L75 60.8579V39.1421L67.6777 31.8198C63.7725 27.9146 57.4408 27.9146 53.5355 31.8198L46.4645 38.8909" stroke="white" stroke-width="6"/>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="company-name">COMPANY</span>
+                        <span class="tagline">business tagline</span>
+                    </div>
+                </a>
+                
+                <!-- Hamburger Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Our Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                    </ul>
+                     <a href="#" class="btn btn-quote">Get A Quote</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                
+                <!-- Left Column: Text Content -->
+                <div class="text-content">
+                    <h1>
+                        Your Resume <br>
+                        <span class="highlight">Deserves A Yes</span> Let's <br> Make It Happen
+                    </h1>
+                    <p>
+                        If Your Resume isn't Getting Responses, it's Time For An Upgrade. Get An ATS-Optimized Resume Crafted By HR Experts To Help You Land More Interviews. Our Resumes Are Designed To Get Your Foot In The Door And Place Your Name At The Top Of The Shortlist.
+                    </p>
+                    <div class="button-group">
+                        <button class="btn btn-secondary">RESUME PAKAGES</button>
+                        <button class="btn btn-primary">CONTACT US</button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image and Info Cards -->
+                <div class="image-content">
+                    <img 
+                        src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                        alt="A happy student holding books and wearing a backpack" 
+                        class="hero-image"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x800/fbcfe8/44403c?text=Image+Not+Found';"
+                    >
+                    
+                    <!-- Info Card 1: Instructor Rating -->
+                    <div class="info-card rating-card">
+                        <p class="rating-score">4.9</p>
+                        <div class="rating-details">
+                            <div class="stars">
+                                <!-- Star SVG Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                            </div>
+                            <p class="rating-text">Instructor Rating</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Info Card 2: Resumes Created -->
+                    <div class="info-card created-card">
+                        <div class="created-icon">
+                             <!-- Graduation Cap SVG Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </div>
+                        <div class="created-details">
+                            <p class="created-count">260+</p>
+                            <p class="created-text">Online Resume <br> Created</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="what-you-get-section">
+        <div class="container">
+            <span class="section-tag">What You Get</span>
+            <h4 class="section-title">You're Not Just Another Applicant And Your Resume Shouldn't Look Like One</h4>
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="card-image">
+                        <img src= "undraw_screening-resumes_dh9s.svg" alt="Illustration of a resume passing a filter check">
+                    </div>
+                    <h3>A Resume That Passes ATS Filters</h3>
+                    <p>Get a professionally written, keyword-optimized resume that lands in recruiter inboxes—not rejection piles.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card">
+                     <div class="card-image">
+                        <img src="undraw_letter_ombg.svg" alt="Illustration of a cover letter being read">
+                    </div>
+                    <h3>A Cover Letter That Gets Read</h3>
+                    <p>Stand out with a cover letter that speaks directly to the role and reflects your strengths.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card">
+                     <div class="card-image">
+                        <img src="undraw_profile_d7qw.svg" alt="Illustration of an optimized LinkedIn profile">
+                    </div>
+                    <h3>A LinkedIn Profile That Works For You</h3>
+                    <p>Attract the right eyes, start conversations, and show up in recruiter searches.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="feature-card">
+                     <div class="card-image">
+                        <img src="undraw_interview_yz52.svg" alt="Illustration of a confident job interview">
+                    </div>
+                    <h3>Interview Confidence</h3>
+                    <p>Interview preparation with real HR professionals so you speak clearly, confidently, and convincingly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
